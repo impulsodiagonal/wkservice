@@ -3,6 +3,6 @@ if [ $1 == "-V" ] || [ $1 == "--version" ]
 then
 	_wkhtmltopdf -V
 else
-	http "http://localhost:8080?params=$*"
+	wget "http://localhost:8080?params=$*"
 	
 fi
