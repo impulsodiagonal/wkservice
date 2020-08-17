@@ -2,6 +2,7 @@ package main
 
 // Simple wkhtmltopdf as service
 // TODO: tests
+// TODO: add version
 
 import (
 	"log"
