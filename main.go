@@ -4,7 +4,6 @@ package main
 // TODO: tests
 
 import (
-	"fmt"
 	"log"
 	"log/syslog"
 	"net/http"
@@ -43,7 +42,7 @@ func LaunchCmd(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Printf("Launching wkhtmltopdf with params: '%s'", params)
+	log.Printf("Launching wkhtmltopdf with params: '%s'", params)
 
 	cmd := wkCmd + " " + params
 	res := exec.Command("bash", "-c", cmd)
