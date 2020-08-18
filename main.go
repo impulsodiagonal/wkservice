@@ -63,7 +63,6 @@ func checkWkExists() string {
 	path, err := exec.LookPath("_wkhtmltopdf")
 	if err != nil {
 		log.Fatal("didn't find '_wkhtmltopdf' executable.\n")
-
 	} else {
 		log.Printf("'wkhtmltopdf' executable is in '%s'\n", path)
 	}
